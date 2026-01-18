@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+@import "tailwindcss";
+
+@keyframes overshoot-center {
+  0% {
+    transform: translateX(-10%);
+    opacity: 0;
+  }
+  70% {
+    transform: translateX(10%);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+/* Card 1: top-right ➜ top-right (small diagonal settle) */
+@keyframes card-1-slant {
+  0% {
+    transform: translate(150px, -150px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(180, -120);
+    opacity: 1;
+  }
+}
+
+/* Card 2: top-right ➜ center */
+@keyframes card-2-slant {
+  0% {
+    transform: translate(140px, -140px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-115%, 55%); /* slight overshoot */
+    opacity: 1;
+  }
+}
+
+/* Card 3: top-right ➜ bottom-left */
+@keyframes card-3-slant {
+  0% {
+    transform: translate(150px, -160px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-230%, 95%);
+    opacity: 1;
+  }
+}
+/*Dot 2 bottom right - left*/
+@keyframes Dot-industries-2-slide {
+  0% {
+    transform: translate(-50px,-10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(12%,30px);
+    opacity: 1;
+  }
+}
+
+/*Dot industries 1 bottom right - left*/
+@keyframes Dot-industries-1-slide {
+  0% {
+    transform: translate(30px,0px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-0%,10px);
+    opacity: 1;
+  }
+}
+
+/*product feature slide - left to right*/
+@keyframes product-feature-slide-right {
+  0% {
+    transform: translateX(-5%);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateX(-2%);
+    opacity: 0;
+  }
+  
+  100% {
+    transform: translateX(3%);
+    opacity: 1;
+  }
+}
+
+/*product image - right to left*/
+@keyframes product-image-slide-left {
+  0% {
+    transform: translateX(20%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(10%);
+    opacity: 1;
+  }
+}
+
+/*product image - centretop to down*/
+@keyframes product-title-slide-down {
+    0% {
+      transform: translateY(-10%);
+      opacity: 0;
+    }
+
+    0% {
+      transform: translateY(0%);
+      opacity: 0;
+    }
+    
+    100% {
+      transform: translateY(10%);
+      opacity: 1;
+    }
+}
+
+/*Dot 2 top left - right*/
+@keyframes Dot-product-1-slide {
+  0% {
+    transform: translate(-30%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(10%);
+    opacity: 1;
+  }
+}
+
+/*product3 Dot 1 top left - right*/
+@keyframes Dot1-product-3-slide {
+  0% {
+    transform: translate(-30%, 80%);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translate(70%, 80%); /* move right only */
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(60%, 250%); /* then move down */
+    opacity: 1;
+  }
+}
+
+/*product1 circle from right - leftt*/
+@keyframes overshoot-center-from-right {
+  0% {
+    transform: translateX(0%);
+    opacity: 0;
+  }
+  70% {
+    transform: translateX(-100%);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateX(-50%);
+    opacity: 1;
+  }
+}
+
+/*product2 circle from right-left*/
+@keyframes product2-circle-overshoot-center {
+  0% {
+    transform: translateX(-10%);
+    opacity: 0;
+  }
+  70% {
+    transform: translateX(25%);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateX(25%);
+    opacity: 1;
+  }
+}
+
+/*product2 image - left to right*/
+@keyframes product2-image-slide-left {
+  0% {
+    transform: translateX(-5%);
+    opacity: 0;
+  }
+
+  20% {
+    transform: translateX(-2%);
+    opacity: 0;
+  }
+  
+  100% {
+    transform: translateX(20%);
+    opacity: 1;
+  }
+}
+
+/*product2 feature slide - right to left*/
+@keyframes product2-feature-slide-right {
+  0% {
+    transform: translateX(20%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+/*Dot 2 top right - top bottom*/
+@keyframes Dot-product2-slide {
+  0% {
+    transform: translate(70%,-25%);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(70%,-25%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(70%,100%);
+    opacity: 1;
+  }
+}
+
+
+/*product3 circle from right - leftt*/
+@keyframes product3-overshoot-center-from-right {
+  0% {
+    transform: translateX(0%);
+    opacity: 0;
+  }
+  70% {
+    transform: translateX(-70%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-30%);
+    opacity: 1;
+  }
+}
+
+/*Blog dot1 left - right*/
+@keyframes Dot-Blog-1-slide {
+  0% {
+    transform: translate(-30%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(10%);
+    opacity: 1;
+  }
+}
+
+/*Blog div bottom-top*/
+@keyframes Blog-div-slide-top {
+  0% {
+    transform: translate(0%,100%);
+    opacity: 0;
+  }
+  40% {
+    transform: translate(0%,100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0%,-0%);
+    opacity: 1;
+  }
+}
+
+/*Blog img bottom-top*/
+@keyframes Blog-img-slide-top {
+  0% {
+    transform: translate(0%,100%);
+    opacity: 0;
+  }
+  40% {
+    transform: translate(0%,100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0%,-0%);
+    opacity: 1;
+  }
+}
+
+/*Blog dot2 from right - leftt*/
+@keyframes Blog-dot2-from-right-left {
+  0% {
+    transform: translateX(0%);
+    opacity: 0;
+  }
+  30% {
+    transform: translateX(0%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-30%);
+    opacity: 1;
+  }
+}
+
+/*Contact slide - left to right*/
+@keyframes contactUS-slide-right {
+  0% {
+    transform: translateX(-5%);
+    opacity: 0;
+  }
+
+  40% {
+    transform: translateX(-2%);
+    opacity: 0;
+  }
+  
+  100% {
+    transform: translateX(3%);
+    opacity: 1;
+  }
+}
+
+/*Inquiry card bottom-top*/
+@keyframes Inquiry-card-slide-top {
+  0% {
+    transform: translate(0%,100%);
+    opacity: 0;
+  }
+  40% {
+    transform: translate(0%,100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0%,31%);
+    opacity: 1;
+  }
+}
+
+/*contacts dots slide - left to right*/
+@keyframes contact-dot-slide-right {
+  0% {
+    transform: translate(-50%,-100%);
+    opacity: 1;
+  }
+
+  20% {
+    transform: translate(0%,-0%);
+    opacity: 1;
+  }
+  
+  100% {
+    transform: translateX(3%,-10%);
+    opacity: 1;
+  }
+}
+
+/*product image - centretop to down*/
+@keyframes about-middle-slide-down {
+    0% {
+      transform: translateY(0%);
+      opacity: 0;
+    }
+
+    0% {
+      transform: translateY(10%);
+      opacity: 0;
+    }
+    
+    100% {
+      transform: translateY(20%);
+      opacity: 1;
+    }
+}
+
+/*about left frame left - right*/
+@keyframes about-left-frame-slide {
+  0% {
+    transform: translate(-30%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-1%);
+    opacity: 1;
+  }
+}
+
+/*about right frame- right to left*/
+@keyframes about-right-frame-slide {
+  0% {
+    transform: translateX(20%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(3%);
+    opacity: 1;
+  }
+}
+
+/*team fade animation*/
+@keyframes team-fade-anim {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*Meet Title bottom-top*/
+@keyframes Meet-Title-slide-top {
+  0% {
+      transform: translateY(-10%);
+      opacity: 0;
+    }
+
+    0% {
+      transform: translateY(0%);
+      opacity: 0;
+    }
+    
+    100% {
+      transform: translateY(20%);
+      opacity: 1;
+    }
+}
+
+/*Team arrow bottom-top*/
+@keyframes team-div-slide-top {
+  0% {
+    transform: translate(0%,50%);
+    opacity: 0;
+  }
+  40% {
+    transform: translate(0%,50%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0%,-0%);
+    opacity: 1;
+  }
+}
+
+
+
