@@ -30,7 +30,7 @@ This is assigment from aadrila
 
 Check the live version of this project here:
 
-[Live Demo on Vercel]()
+[Live Demo on Vercel](https://aadrila-tech.vercel.app/)
 
 ---
 
