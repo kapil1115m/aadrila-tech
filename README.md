@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -14,3 +15,47 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+=======
+# aadrila-tech
+# aadrila assignment
+
+
+This is assigment from aadrila 
+
+> A modern React frontend built with Vite, featuring dynamic products display, animation, and a responsive design.
+
+---
+
+## 🚀 Live Demo
+
+Check the live version of this project here:
+
+[Live Demo on Vercel]()
+
+---
+
+## 🛠️ Technologies Used
+
+- **React.js** (Frontend library)
+- **Vite** (Build tool)
+- **Tailwind CSS** (Styling)
+- **JavaScript / JSX**
+- **Git & GitHub** (Version control)
+- **Vercel** (Hosting)
+
+---
+
+## 📂 Project Structure
+
+```plaintext
+my-project/
+├── public/                 # Static assets (images, icons, etc.)
+├── src/                    # React components, pages, styles
+│   ├── assets/             # Images and media
+│   ├── components/         # Reusable UI components
+│   └── App.jsx             # Main App component
+├── package.json            # Project dependencies & scripts
+├── vite.config.js          # Vite configuration
+└── .gitignore
+
+>>>>>>> 2902f279e2d507bdccea0194945ae07360f9b156
